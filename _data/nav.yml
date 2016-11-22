@@ -1,0 +1,5 @@
+menu:
+    - { url: '/', text: 'Portfolio', subtext: 'mrkněte se na mou práci' }
+    - { url: '/o-mne', text: 'O mně', subtext: 'něco si o mě počtěte' }
+    - { url: '/blog', text: 'Blog', subtext: 'co je nového' }
+    - { url: '/kontakt', text: 'Kontakt', subtext: 'ozvěte se' }

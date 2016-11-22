@@ -1,0 +1,10 @@
+# Custom site variables
+sitename: Delmardesign.cz
+admin_name: Jan Delmar
+admin_email: 'jandelmardesign@gmail.com'
+
+url: 'http://delmardesign.cz'
+
+social:
+  - { github: 'https://github.com/iandelmar' }
+  - { facebook: 'https://www.facebook.com/delmardesigncz/' }
