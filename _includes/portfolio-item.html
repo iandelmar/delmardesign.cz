@@ -1,10 +1,10 @@
 <div class="mix mix-4 {{ post.filter }}" data-ix="hover-port">
-  <a class="w-inline-block tittle-wrapper" href="#">
+  <a class="w-inline-block tittle-wrapper" href="{{ post.url }}">
     <h4 class="text-port" data-ix="move-up">{{ post.title }}</h4>
     <div class="sub-text" data-ix="move-up-2">{{ post.sub-title }}</div>
   </a>
   <div class="img-wrapper">
-    <a href="#"><img src="{{ post.featured_image }}" class="img-responsive" alt="{{ post.title }}" /></a>
+    <a href="{{ post.url }}"><img src="{{ post.featured_image }}" class="img-responsive" alt="{{ post.title }}" /></a>
 
     {% if post.filter contains 'star' %}
       <div class="triangle">

@@ -1,0 +1,34 @@
+{% include header.html %}
+{% include menu.html %}
+
+<div class="move-wrapper">
+
+  <!-- start single blog page -->
+  <section class="inner-banner" id="top">
+    <div class="w-container fixed-container">
+      <div class="algin-center">
+        <h1 class="inner-sub" data-ix="move-3">{{ page.title }}</h1>
+        <div class="tst-txt tst-ban" data-ix="move-3">{{ page.excerpt }}</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="singlewrap">
+    <section class="section singlephp">
+      <div class="w-container w-row">
+        <div class="div-spc spc">
+          <div class="post">
+            <img src="{{ page.featured_image }}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="{{ page.title }}" src="{{ page.featured_image }}"/>
+          </div>
+        </div>
+
+        <div class="div-spc spc">
+          {{ page.content }}
+        </div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+{% include footer.html %}

@@ -1,0 +1,21 @@
+<div class="news-item">
+  <div id="{{ post.id }}" class="element clearfix col1-3 home auto post type-post status-publish format-standard has-post-thumbnail hentry">
+    <div class="blog-p">
+      <div class="post">
+        <a class="w-inline-block" href="{{ post.url }}">
+          <img src="{{ post.featured_image }}">
+        </a>
+      </div>
+      <div class="bcon-wrapper">
+        <h3><a href="{{ post.url }}" class="h-link">{{ post.title }}</a></h3>
+        <div>
+          <div class="meta-tag">
+            {{ site.data.global.admin_name }} | {{ post.date }} </div>
+          <div class="blog-l"></div>
+        </div>
+        {{ post.excerpt }}
+        <div class="post-more"><a class="post-link" href="{{ post.url }}" title="{{ post.title }}">Chcete vědět víc?&nbsp;&gt;</a></div>
+      </div>
+    </div>
+  </div>
+</div>

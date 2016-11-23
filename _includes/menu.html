@@ -9,7 +9,7 @@
   </div>
   <nav class="menu-wrapper">
 
-    <a class="w-inline-block brand" href="{{site.data.global.url}}" data-ix="move">
+    <a class="w-inline-block brand" href="/" data-ix="move">
       <img src="{{site.baseurl}}/assets/images/logo.png" width="120" alt="">
     </a>
 
@@ -28,11 +28,18 @@
 
 
     <div class="social-ico" data-ix="move" style="display:block">
-      <a class="w-inline-block social" href="http://pinterset.com/" title="Follow On Pinterest" target="_blank"> <i class="fa  fa-pinterest-square fa-2x"></i></a>
-      <a class="w-inline-block social" href="https://twitter.com/" title="Follow On Twitter" target="_blank"> <i class="fa  fa-twitter-square fa-2x"></i></a>
-      <a class="w-inline-block social" href="https://plus.google.com/" title="Follow On Google Plus" target="_blank"> <i class="fa  fa-google-plus-square fa-2x"></i></a>
-      <a class="w-inline-block social" href="http://facebook.com/" title="Join us on Facebook" target="_blank"> <i class="fa  fa-facebook-square fa-2x"></i></a>
-
+      {% if site.data.social.pinterest %}
+        <a class="w-inline-block social" href="http://pinterset.com/" title="Follow On Pinterest" target="_blank"> <i class="fa  fa-pinterest-square fa-2x"></i></a>
+      {% endif %}
+      {% if site.data.social.twitter %}
+        <a class="w-inline-block social" href="https://twitter.com/" title="Follow On Twitter" target="_blank"> <i class="fa  fa-twitter-square fa-2x"></i></a>
+      {% endif %}
+      {% if site.data.social.googleplus %}
+        <a class="w-inline-block social" href="https://plus.google.com/" title="Follow On Google Plus" target="_blank"> <i class="fa  fa-google-plus-square fa-2x"></i></a>
+      {% endif %}
+      {% if site.data.social.facebook %}
+        <a class="w-inline-block social" href="http://facebook.com/" title="Join us on Facebook" target="_blank"> <i class="fa  fa-facebook-square fa-2x"></i></a>
+      {% endif %}
 
       <div class="copyright">
         <div class="copyright-text">{{site.data.global.admin_name}}</div>

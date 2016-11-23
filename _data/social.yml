@@ -1,0 +1,9 @@
+
+# Social buttons
+facebook:
+  - { url: 'https://www.facebook.com/delmardesigncz/', text: 'Delmardesign na Facebooku' }
+github:
+  - { url: 'https://github.com/iandelmar', text: 'má práce na GitHub'}
+pinterest:
+twitter:
+googleplus:

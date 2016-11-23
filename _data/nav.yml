@@ -1,3 +1,4 @@
+# Main menu items
 menu:
     - { url: '/', text: 'Portfolio', subtext: 'mrkněte se na mou práci' }
     - { url: '/o-mne', text: 'O mně', subtext: 'něco si o mě počtěte' }

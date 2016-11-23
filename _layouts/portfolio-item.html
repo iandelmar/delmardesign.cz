@@ -3,35 +3,30 @@
 
 <div class="move-wrapper">
 
-  <!-- start single blog page -->
+  <!-- start portfolio-item page -->
   <section class="inner-banner" id="top">
     <div class="w-container fixed-container">
       <div class="algin-center">
-        <h1 class="inner-sub" data-ix="move-3" style="opacity: 0; transform: translateX(0px) translateY(0px); transition: opacity 600ms, transform 500ms;"><span>Flying.</span> Yellow Monster</h1>
-        <div class="tst-txt tst-ban" data-ix="move-3" style="opacity: 0; transform: translateX(0px) translateY(0px); transition: opacity 600ms, transform 500ms;">Here you can put some description about you project.</div>
+        <h1 class="inner-sub" data-ix="move-3" style="opacity: 0; transform: translateX(0px) translateY(0px); transition: opacity 600ms, transform 500ms;"><span>{{ site.data.global.sitename }}</span> {{ page.title }}</h1>
+        <div class="tst-txt tst-ban" data-ix="move-3" style="opacity: 0; transform: translateX(0px) translateY(0px); transition: opacity 600ms, transform 500ms;">{{ page.sub-title }}</div>
       </div>
     </div>
   </section>
 
-
   <section class="section single-portfolio-section">
     <div class="w-container">
 
-
       <div class="w-row portfolio-top-nav">
         <div class="w-col w-col-4 col-left">
-          <div class="btn-spc"><a href="http://demo.nrgthemes.com/projects/flying/portfolio-item/app-icon/" rel="prev"><span class="button btn-small"><span class="arrow">&lt;</span>Previous Project</span></a>
-          </div>
+          <div class="btn-spc"><a href="{{ page.next.url }}" rel="prev"><span class="button btn-small"><span class="arrow">&lt;</span>Předchozí projekt</span></a>          </div>
         </div>
         <div class="w-col w-col-4 col-center">
-          <div class="btn-spc"><a class="button btn-small" href="http://demo.nrgthemes.com/projects/flying" title="All Project" target="_self">All Project</a>
-          </div>
+          <div class="btn-spc"><a class="button btn-small" href="/" title="All Project" target="_self">Celé portfolio</a></div>
         </div>
         <div class="w-col w-col-4 col-right">
-          <div class="btn-spc"><a href="http://demo.nrgthemes.com/projects/flying/portfolio-item/bag/" rel="next"><span class="button btn-small">Next Project<span class="arrow a-nxt">&gt;</span></span></a> </div>
+          <div class="btn-spc"><a href="{{ page.previous.url }}" rel="next"><span class="button btn-small">Další projekt<span class="arrow a-nxt">&gt;</span></span></a></div>
         </div>
       </div>
-
 
       <div class="div-spc spc">
         <section style="padding-top: 40px !important;padding-bottom: 0px !important;" class="section vc_custom_1429367713608">
@@ -41,36 +36,23 @@
                 <div class="wpb_wrapper">
                   <div class="w-slider-tabs w-tabs  slider-tab-section-0" data-duration-in="300" data-duration-out="100">
                     <div class="w-tab-content">
-                      <div class="w-tab-pane tab-0 w--tab-active" data-w-tab="Tab 0">
-                        <div><img src="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/03/photo-tab1.jpg" alt="photo-tab"></div>
-                      </div>
-                      <div class="w-tab-pane tab-1" data-w-tab="Tab 1">
-                        <div><img src="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/03/photo-tab3.jpg" alt="photo-tab">
-                          <div class="caption-t " data-ix="caption-tab" style="opacity: 0; transform: translateX(-20px) translateY(0px);">This is a caption!</div>
+                      {% for image in page.images %}
+                      <div class="w-tab-pane">
+                        <div><img src="{{ image.link }}" alt="photo-tab">
+                          {% if image.caption %}
+                            <div class="caption-t" data-ix="caption-tab" style="opacity: 0; transform: translateX(-20px) translateY(0px);">{{ image.caption }}</div>
+                          {% endif %}
                         </div>
                       </div>
-                      <div class="w-tab-pane tab-2" data-w-tab="Tab 2">
-                        <div><img src="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/03/photo-tab4.jpg" alt="photo-tab">
-                          <div class="caption-t cap-orange" data-ix="caption-tab" style="opacity: 0; transform: translateX(-20px) translateY(0px);">This is another orange caption!</div>
-                        </div>
-                      </div>
-                      <div class="w-tab-pane tab-3" data-w-tab="Tab 3">
-                        <div><img src="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/03/photo-tab5.jpg" alt="photo-tab"></div>
-                      </div>
-                      <div class="w-tab-pane tab-4" data-w-tab="Tab 4">
-                        <div><img src="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/03/photo-tab21.jpg" alt="photo-tab">
-                          <div class="caption-t cap-link" data-ix="caption-tab" style="transition: all 0.5s ease 0s; opacity: 0; transform: translateX(-20px) translateY(0px);">
-                            <a href="#" title="Slider" target=""></a>This is a caption with link!</div>
-                        </div>
-                      </div>
+                      {% endfor %}
                     </div>
+
                     <div class="w-tab-menu w-clearfix">
-                      <a class="w-tab-link w-inline-block slider-tab tab-0 w--current" style="background-image:url(http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/03/photo-tab1.jpg);" data-w-tab="Tab 0"></a>
-                      <a class="w-tab-link w-inline-block slider-tab tab-1" style="background-image:url(http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/03/photo-tab3.jpg);" data-w-tab="Tab 1"></a>
-                      <a class="w-tab-link w-inline-block slider-tab tab-2" style="background-image:url(http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/03/photo-tab4.jpg);" data-w-tab="Tab 2"></a>
-                      <a class="w-tab-link w-inline-block slider-tab tab-3" style="background-image:url(http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/03/photo-tab5.jpg);" data-w-tab="Tab 3"></a>
-                      <a class="w-tab-link w-inline-block slider-tab tab-4" style="background-image:url(http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/03/photo-tab21.jpg);" data-w-tab="Tab 4"></a>
+                      {% for image in page.images %}
+                        <a class="w-tab-link w-inline-block slider-tab" style="background-image:url({{ image.link }});"></a>
+                      {% endfor %}
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -78,6 +60,7 @@
           </div>
         </section>
         <div class="clearfix"></div>
+
         <section style="padding-top: 40px !important;padding-bottom: 0px !important;" class="section vc_custom_1429366134986">
           <div class="container">
             <div class="row">
@@ -86,11 +69,7 @@
                   <div class="vc_wp_text wpb_content_element">
                     <div class="widget widget_text">
                       <div class="textwidget">
-                        <p>Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Etiam imperdiet imperdiet orci. Ut a nisl id ante tempus hendrerit. Proin pretium, leo ac pellentesque mollis, felis nunc
-                          ultrices eros, sed gravida augue augue mollis justo. Praesent egestas neque eu enim.</p>
-                        <p>Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Aenean vulputate eleifend tellus. Donec vitae sapien ut libero venenatis faucibus. Phasellus dolor. Vestibulum facilisis, purus nec pulvinar iaculis, ligula
-                          mi congue nunc, vitae euismod ligula urna in dolor.</p>
-                        <p>Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Ut leo. Fusce vel dui. Aenean viverra rhoncus pede. Maecenas malesuada.</p>
+                        {{ page.content }}
                       </div>
                     </div>
                   </div>
@@ -101,120 +80,53 @@
           </div>
         </section>
         <div class="clearfix"></div>
+
         <section style="padding-top: 40px !important;padding-bottom: 20px !important;" class="section vc_custom_1429365418434">
           <div class="container">
             <div class="row">
               <div class="w-col w-col-4 wpb_column vc_column_container ">
                 <div class="wpb_wrapper">
                   <div>
-                    <h4>Skills</h4>
+                    <h4>Použité technologie</h4>
                     <div class="line-con" style="border-bottom:1px; border-bottom-style:solid; border-color:#ebebeb;"></div>
                   </div>
                   <div class="clearfix col-md-12" style="height: 30px;"></div>
                   <div class="col-md-12 content-head text-left">
-                    <p>Print Design, Web Design</p>
+                    <p>{{ page.skills }}</p>
                   </div>
                 </div>
               </div>
 
-              <div class="w-col w-col-4 wpb_column vc_column_container ">
-                <div class="wpb_wrapper">
-                  <div>
-                    <h4>Client</h4>
-                    <div class="line-con" style="border-bottom:1px; border-bottom-style:solid; border-color:#ebebeb;"></div>
-                  </div>
-                  <div class="clearfix col-md-12" style="height: 30px;"></div>
-                  <div class="col-md-12 content-head text-left">
-                    <p>Moutheme</p>
+              {% if page.client %}
+                <div class="w-col w-col-4 wpb_column vc_column_container ">
+                  <div class="wpb_wrapper">
+                    <div>
+                      <h4>Klient</h4>
+                      <div class="line-con" style="border-bottom:1px; border-bottom-style:solid; border-color:#ebebeb;"></div>
+                    </div>
+                    <div class="clearfix col-md-12" style="height: 30px;"></div>
+                    <div class="col-md-12 content-head text-left">
+                      <p>{{ page.client }}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="w-col w-col-4 wpb_column vc_column_container ">
-                <div class="wpb_wrapper">
-                  <div class="btn-spc"><a href="#" class="button  btn-medium   btn-line">View Project</a></div>
+                {% if page.client_url %}
+                <div class="w-col w-col-4 wpb_column vc_column_container ">
+                  <div class="wpb_wrapper">
+                    <div class="btn-spc"><a href="{{ page.client_url }}" class="button btn-medium btn-line" target="_blank">{{ page.client }}</a></div>
+                  </div>
                 </div>
-              </div>
+                {% endif %}
+              {% endif %}
             </div>
           </div>
         </section>
         <div class="clearfix"></div>
+
       </div>
-
-
     </div>
   </section>
-  <!-- end single blog page -->
-
-
-  <section>
-
-    <div class="mix mix-5 related-item" data-ix="hover-port">
-      <a class="w-inline-block tittle-wrapper" href="http://demo.nrgthemes.com/projects/flying/portfolio-item/app-icon/" title="App Icon">
-        <h4 class="text-port" data-ix="move-up" style="opacity: 0.08; transform: translateX(0px) translateY(20px); transition: opacity 500ms, transform 500ms;">App Icon</h4>
-        <div class="sub-text" data-ix="move-up-2" style="opacity: 0; transform: translateX(0px) translateY(20px); transition: opacity 500ms, transform 500ms;">Logotype &amp; Print</div>
-      </a>
-
-      <div class="img-wrapper" style="transition: transform 400ms; transform: translateX(0px) translateY(0px);">
-        <img width="800" height="700" src="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port8.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt="port8" srcset="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port8-300x263.jpg 300w, http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port8.jpg 800w"
-        sizes="(max-width: 800px) 100vw, 800px">
-      </div>
-    </div>
-    <div class="mix mix-5 related-item" data-ix="hover-port">
-      <a class="w-inline-block tittle-wrapper" href="http://demo.nrgthemes.com/projects/flying/portfolio-item/harley/" title="Harley">
-        <h4 class="text-port" data-ix="move-up" style="opacity: 0.08; transform: translateX(0px) translateY(20px); transition: opacity 500ms, transform 500ms;">Harley</h4>
-        <div class="sub-text" data-ix="move-up-2" style="opacity: 0; transform: translateX(0px) translateY(20px); transition: opacity 500ms, transform 500ms;">Illustration</div>
-      </a>
-
-      <div class="img-wrapper" style="transition: transform 400ms; transform: translateX(0px) translateY(0px);">
-        <img width="800" height="700" src="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port17.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt="port17" srcset="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port17-300x263.jpg 300w, http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port17.jpg 800w"
-        sizes="(max-width: 800px) 100vw, 800px">
-        <div class="triangle">
-          <div class="left-star"><i class="fa fa-star fa-2x"></i></div>
-        </div>
-      </div>
-    </div>
-    <div class="mix mix-5 related-item" data-ix="hover-port">
-      <a class="w-inline-block tittle-wrapper" href="http://demo.nrgthemes.com/projects/flying/portfolio-item/throme/" title="Throme">
-        <h4 class="text-port" data-ix="move-up" style="opacity: 0.08; transform: translateX(0px) translateY(20px); transition: opacity 500ms, transform 500ms;">Throme</h4>
-        <div class="sub-text" data-ix="move-up-2" style="opacity: 0; transform: translateX(0px) translateY(20px); transition: opacity 500ms, transform 500ms;">Illustration &amp; Logotype</div>
-      </a>
-
-      <div class="img-wrapper" style="transition: transform 400ms; transform: translateX(0px) translateY(0px);">
-        <img width="800" height="700" src="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port10.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt="port10" srcset="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port10-300x263.jpg 300w, http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port10.jpg 800w"
-        sizes="(max-width: 800px) 100vw, 800px">
-      </div>
-    </div>
-    <div class="mix mix-5 related-item" data-ix="hover-port">
-      <a class="w-inline-block tittle-wrapper" href="http://demo.nrgthemes.com/projects/flying/portfolio-item/flat-mountain/" title="Flat Mountain">
-        <h4 class="text-port" data-ix="move-up" style="opacity: 0.08; transform: translateX(0px) translateY(20px); transition: opacity 500ms, transform 500ms;">Flat Mountain</h4>
-        <div class="sub-text" data-ix="move-up-2" style="opacity: 0; transform: translateX(0px) translateY(20px); transition: opacity 500ms, transform 500ms;">Print</div>
-      </a>
-
-      <div class="img-wrapper" style="transition: transform 400ms; transform: translateX(0px) translateY(0px);">
-        <img width="800" height="700" src="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port13.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt="port13" srcset="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port13-300x263.jpg 300w, http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port13.jpg 800w"
-        sizes="(max-width: 800px) 100vw, 800px">
-        <div class="triangle">
-          <div class="left-star"><i class="fa fa-star fa-2x"></i></div>
-        </div>
-      </div>
-    </div>
-    <div class="mix mix-5 related-item" data-ix="hover-port">
-      <a class="w-inline-block tittle-wrapper" href="http://demo.nrgthemes.com/projects/flying/portfolio-item/dog/" title="Dog">
-        <h4 class="text-port" data-ix="move-up" style="opacity: 0.08; transform: translateX(0px) translateY(20px); transition: opacity 500ms, transform 500ms;">Dog</h4>
-        <div class="sub-text" data-ix="move-up-2" style="opacity: 0; transform: translateX(0px) translateY(20px); transition: opacity 500ms, transform 500ms;">Illustration</div>
-      </a>
-
-      <div class="img-wrapper" style="transition: transform 400ms; transform: translateX(0px) translateY(0px);">
-        <img width="800" height="700" src="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port16.jpg" class="attachment-portfolio size-portfolio wp-post-image" alt="port16" srcset="http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port16-300x263.jpg 300w, http://demo.nrgthemes.com/projects/flying/wp-content/uploads/2015/04/port16.jpg 800w"
-        sizes="(max-width: 800px) 100vw, 800px">
-        <div class="triangle">
-          <div class="left-star"><i class="fa fa-star fa-2x"></i></div>
-        </div>
-      </div>
-    </div>
-
-  </section>
+  <!-- end portfolio-item page -->
 
 </div>
 
