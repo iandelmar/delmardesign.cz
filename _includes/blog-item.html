@@ -10,7 +10,7 @@
         <h3><a href="{{ post.url }}" class="h-link">{{ post.title }}</a></h3>
         <div>
           <div class="meta-tag">
-            {{ site.data.global.admin_name }} | {{ post.date }} </div>
+            {{ site.data.global.admin_name }} | {{ post.date | date: "%d %B %Y" }} </div>
           <div class="blog-l"></div>
         </div>
         {{ post.excerpt }}

@@ -17,15 +17,15 @@
     <div class="w-container">
 
       <div class="w-row portfolio-top-nav">
-        <div class="w-col w-col-4 col-left">
-          <div class="btn-spc"><a href="{{ page.next.url }}" rel="prev"><span class="button btn-small"><span class="arrow">&lt;</span>Předchozí projekt</span></a>          </div>
-        </div>
+          <div class="w-col w-col-4 col-left">
+            <div class="btn-spc"><a href="{{ page.previous_in_category.url }}" rel="prev"><span class="button btn-small"><span class="arrow">&lt;</span>Další projekt</span></a></div>
+          </div>
         <div class="w-col w-col-4 col-center">
           <div class="btn-spc"><a class="button btn-small" href="/" title="All Project" target="_self">Celé portfolio</a></div>
         </div>
-        <div class="w-col w-col-4 col-right">
-          <div class="btn-spc"><a href="{{ page.previous.url }}" rel="next"><span class="button btn-small">Další projekt<span class="arrow a-nxt">&gt;</span></span></a></div>
-        </div>
+          <div class="w-col w-col-4 col-right">
+            <div class="btn-spc"><a href="{{ page.next_in_category.url }}" rel="next"><span class="button btn-small">Předchozí projekt<span class="arrow a-nxt">&gt;</span></span></a></div>
+          </div>
       </div>
 
       <div class="div-spc spc">
@@ -69,7 +69,7 @@
                   <div class="vc_wp_text wpb_content_element">
                     <div class="widget widget_text">
                       <div class="textwidget">
-                        {{ page.content }}
+                        {{ content }}
                       </div>
                     </div>
                   </div>
