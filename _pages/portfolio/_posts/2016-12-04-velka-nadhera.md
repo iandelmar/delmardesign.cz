@@ -1,6 +1,6 @@
 ---
 layout: portfolio-item
-permalink: portfolio/:title
+permalink: portfolio/:title/
 
 title: Velká nádhera
 sub-title: Logo design

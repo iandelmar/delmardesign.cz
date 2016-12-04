@@ -15,7 +15,7 @@ education:
 
 work_experience:
   - { employer: Flex(tronics), position: Junior IT Administrator, year: '2015&ndash;present', text: "As a one and only IT Adminsitrator I'm taking care of a client, server and network administration (mainly Windows, some Linux servers) of the Brno site.", link: 'http://www.flextronics.com', logo: /assets/images/employers/flextronics.png }
-  - { employer: Freelancer, position: Graphic designer, year: '2012&ndash;present', text: "I'm working as a freelance graphic designer for multiple customers.", link: '/', logo: /assets/images/employers/delmardesign.png }
+  - { employer: Freelancer, position: Graphic designer, year: '2012&ndash;present', text: "I'm working as a freelance graphic designer for multiple customers.", link: '/', logo: /assets/images/logo.png }
 
 interests: # icons from FontAwesome
   - { text: Design , icon: 'paint-brush'}

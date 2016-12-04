@@ -1,8 +1,8 @@
 ---
 layout: blog-item
-permalink: blog/:title
+permalink: blog/:title/
 
-featured_image: /assets/images/logo-big.png
+featured_image: /assets/images/favicon.png
 
 # Optional
 images:

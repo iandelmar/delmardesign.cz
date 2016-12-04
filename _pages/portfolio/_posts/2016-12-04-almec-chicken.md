@@ -1,6 +1,6 @@
 ---
 layout: portfolio-item
-permalink: portfolio/:title
+permalink: portfolio/:title/
 
 title: Almec Chicken
 sub-title: Logo design

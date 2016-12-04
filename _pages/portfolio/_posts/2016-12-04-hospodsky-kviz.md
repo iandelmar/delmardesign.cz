@@ -1,6 +1,6 @@
 ---
 layout: portfolio-item
-permalink: portfolio/:title
+permalink: portfolio/:title/
 
 title: Hospodský kviz
 sub-title: Logo & Visual identity
