@@ -52,15 +52,15 @@ Text Domain: flying
 -----------------------------------------------------------------------------------*/
 
 /* 1. Boddy */
-$font-size: 18px;
-$line-height: 2;
+$font-size-base: 18px;
+$line-height: 1.8;
 
 body {
   height: 100%;
   font-family: Raleway, sans-serif;
   color: #bdbdbd;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: $font-size-base;
+  line-height: $line-height;
 }
 
 /* 1-2. Headings */
@@ -69,55 +69,55 @@ h1 {
   margin-top: 20px;
   margin-bottom: 12px;
   color: #414141;
-  font-size: 38px;
-  line-height: 44px;
+  font-size: $font-size-base * 2.4;
+  line-height: $line-height;
   font-weight: 700;
 }
 h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   color: #414141;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: $font-size-base * 2;
+  line-height: $line-height;
   font-weight: 700;
 }
 h3 {
   margin-top: 20px;
   margin-bottom: 10px;
   color: #414141;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: $font-size-base * 1.6;
+  line-height: $line-height;
   font-weight: 600;
 }
 h4 {
   margin-top: 0px;
   margin-bottom: 15px;
   color: #414141;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: $font-size-base * 1.2;
+  line-height: $line-height;
   font-weight: 600;
 }
 h5 {
   margin-top: 10px;
   margin-bottom: 10px;
   color: #414141;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: $font-size-base;
+  line-height: $line-height;
   font-weight: 700;
 }
 h6 {
   margin-top: 10px;
   margin-bottom: 10px;
   color: #414141;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: $font-size-base * 0.8;
+  line-height: $line-height;
   font-weight: 700;
 }
 p {
   margin-bottom: 5px;
   color: #919191;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: $font-size-base;
+  line-height: $line-height;
   font-style: normal;
 }
 body .vc_wp_text.wpb_content_element{margin-bottom:5px;}
