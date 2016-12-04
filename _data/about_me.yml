@@ -1,0 +1,25 @@
+sub-title: I'm 28 years old graphic designer, Ruby enthusiast, full stack web dev fan who likes design and modern technology.
+
+skills_left:
+  - { text: Webdesign, percent: 100 }
+  - { text: App development, percent: 100 }
+  - { text: Graphic design, percent: 100 }
+skills_right:
+  - { text: Databases, percent: 75 }
+  - { text: Software design, percent: 75 }
+  - { text: Cloud services, percent: 75 }
+
+education:
+  - { school: Masaryk University, field_of_study: 'Applied informatics, Master', year: 'Jan, 2014 - Jan, 2016', thesis: 'Foodsharing web application', link: 'https://is.muni.cz/th/374322/fi_m/?lang=en', logo: 'http://www.fi.muni.cz/images2013/new/logo-fi-kulate.png'}
+  - { school: Masaryk University, field_of_study: 'Applied informatics, Bachelor', year: 'Jan, 2010 - Jan, 2014', thesis: 'Visualization of the coffee industry by using 3D graphics', link: 'https://is.muni.cz/th/374322/fi_b/?lang=en', logo: 'http://www.fi.muni.cz/images2013/new/logo-fi-kulate.png'}
+
+work_experience:
+  - { employer: Flex(tronics), position: Junior IT Administrator, year: '2015-present', text: "As a one and only IT Adminsitrator I'm taking care of a client, server and network administration (mainly Windows, some Linux servers) of the Brno site.", link: 'http://www.flextronics.com', logo: /assets/images/employers/flextronics.png }
+  - { employer: Freelancer, position: Graphic designer, year: '2012-present', text: "I'm working as a freelance graphic designer for multiple customers.", link: '/', logo: /assets/images/employers/delmardesign.png }
+
+interests:
+  - { text: Design , icon: 'paint-brush'}
+  - { text: Technology, icon: 'cogs'}
+  - { text: Culture, icon: 'institution'}
+  - { text: Movies, icon: 'video-camera'}
+  - { text: Games, icon: 'gamepad'}

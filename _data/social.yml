@@ -1,9 +1,9 @@
 
 # Social buttons
-facebook:
-  - { url: 'https://www.facebook.com/delmardesigncz/', text: 'Delmardesign na Facebooku' }
-github:
-  - { url: 'https://github.com/iandelmar', text: 'má práce na GitHub'}
-pinterest:
-twitter:
-googleplus:
+social:
+  - { name: facebook, url: 'https://www.facebook.com/delmardesigncz/', text: 'Delmardesign.cz on Facebook' }
+  - { name: github, url: 'https://github.com/iandelmar', text: 'my work on GitHub' }
+  - { name: linkedin, url: 'http://www.linkedin.com/in/jan-delmar', text: 'my LinkedIn profile' }
+  # - { social: pinterest, url: '', text: '', icon: pinterest}
+  # - { social: twitter, url: '', text: '', icon: pinterest}
+  # - { social: googleplus, url: '', text: '', icon: pinterest}

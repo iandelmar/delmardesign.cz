@@ -1,6 +1,6 @@
 # Main menu items
 menu:
-    - { url: '/', text: 'Portfolio', subtext: 'mrkněte se na mou práci' }
-    - { url: '/o-mne', text: 'O mně', subtext: 'něco si o mě počtěte' }
-    - { url: '/blog', text: 'Blog', subtext: 'co je nového' }
-    - { url: '/kontakt', text: 'Kontakt', subtext: 'ozvěte se' }
+    - { url: '/', text: 'Portfolio', subtext: 'look at my work' }
+    - { url: '/about-me', text: 'About me', subtext: 'read about me' }
+    - { url: '/blog', text: 'Blog', subtext: "what's new" }
+    - { url: '/contact', text: 'Contact', subtext: 'email me' }

@@ -1,13 +1,12 @@
-{% include header.html %}
-{% include menu.html %}
+{% include header.html %} {% include menu.html %}
 
 <div class="move-wrapper">
 
   <section class="inner-banner" id="top">
     <div class="w-container fixed-container">
       <div class="algin-center">
-        <h1 class="inner-sub" data-ix="move-3" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 600ms, transform 500ms;"><span>{{site.data.global.sitename}}</span> | O mně</h1>
-        <div class="tst-txt tst-ban" data-ix="move-3" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 600ms, transform 500ms;">Něco si o mně počtěte.</div>
+        <h1 class="inner-sub" data-ix="move-3" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 600ms, transform 500ms;"><span>{{ site.data.global.sitename }}</span> | About me</h1>
+        <div class="tst-txt tst-ban" data-ix="move-3" style="opacity: 1; transform: translateX(0px) translateY(0px); transition: opacity 600ms, transform 500ms;">{{ site.data.about_me.sub-title }}</div>
       </div>
     </div>
   </section>
@@ -16,51 +15,40 @@
   <section style="" class="section">
     <div class="container">
       <div class="row">
-        <div class="w-col w-col-6 wpb_column vc_column_container ">
-          <div class="wpb_wrapper">
-            <div class="spc-bott"> <img src="" alt=""></div>
-          </div>
-        </div>
-
-        <div class="w-col w-col-6 wpb_column vc_column_container ">
+        <div class="w-col w-col-12 wpb_column vc_column_container ">
           <div class="wpb_wrapper">
             <div>
-              <h4>Moje dovednosti</h4>
+              <h4>My skills</h4>
               <div class="line-con" style="border-bottom:1px; border-bottom-style:solid; border-color:#dedede;"></div>
             </div>
             <div class="clearfix col-md-12" style="height: 35px;"></div>
-            <div class="vc_wp_text wpb_content_element">
-              <div class="widget widget_text">
-                <div class="textwidget">
-                  <p><span class="dropcast">D</span>fusce fermentum odio nec arcu. Nam pretium turpis et arcu. Fusce fermentum. Praesent venenatis metus at tortor pulvinar varius. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl.</p>
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-6 wpb_column vc_column_container ">
+          <div class="wpb_wrapper">
             <ul class="w-list-unstyled ">
+              {% for skill in site.data.about_me.skills_left %}
               <li class="li-progres">
-                <div class="w-clearfix pbar-text">Design <span class="pbar-percent">83 %</span></div>
+                <div class="w-clearfix pbar-text">{{ skill.text }} <span class="pbar-percent">{{ skill.percent }} %</span></div>
                 <div class="pbar">
-                  <div class="pbar-overlay" style="width:83 %; " data-ix="progress-bar"></div>
+                  <div class="pbar-overlay" style="width:{{ skill.percent }}%; " data-ix="progress-bar"></div>
                 </div>
               </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-6 wpb_column vc_column_container ">
+          <div class="wpb_wrapper">
+            <ul class="w-list-unstyled ">
+              {% for skill in site.data.about_me.skills_right %}
               <li class="li-progres">
-                <div class="w-clearfix pbar-text">Web Design<span class="pbar-percent">58%</span></div>
+                <div class="w-clearfix pbar-text">{{ skill.text }} <span class="pbar-percent">{{ skill.percent }} %</span></div>
                 <div class="pbar">
-                  <div class="pbar-overlay" style="width:58%; " data-ix="progress-bar"></div>
+                  <div class="pbar-overlay" style="width:{{ skill.percent }}%; " data-ix="progress-bar"></div>
                 </div>
               </li>
-              <li class="li-progres">
-                <div class="w-clearfix pbar-text">Programování<span class="pbar-percent">78%</span></div>
-                <div class="pbar">
-                  <div class="pbar-overlay" style="width:78%; " data-ix="progress-bar"></div>
-                </div>
-              </li>
-              <li class="li-progres">
-                <div class="w-clearfix pbar-text">Skripty<span class="pbar-percent">100%</span></div>
-                <div class="pbar">
-                  <div class="pbar-overlay" style="width:100%; " data-ix="progress-bar"></div>
-                </div>
-              </li>
+              {% endfor %}
             </ul>
           </div>
         </div>
@@ -68,126 +56,97 @@
     </div>
   </section>
   <div class="clearfix"></div>
-  <section style="border-top-width: 1px !important;border-bottom-width: 1px !important;background-color: #f0f1f3 !important;border-top-color: rgba(204,204,204,0.49) !important;border-top-style: solid !important;border-bottom-color: rgba(204,204,204,0.49) !important;border-bottom-style: solid !important;"
-  class="section vc_custom_1429286837436">
+
+  <section style="border-top-width: 1px !important;border-bottom-width: 1px !important;background-color: #f0f1f3 !important;border-top-color: rgba(204,204,204,0.49) !important;border-top-style: solid !important;border-bottom-color: rgba(204,204,204,0.49) !important;border-bottom-style: solid !important;" class="section">
     <div class="container">
       <div class="row">
         <div class="w-col w-col-12 wpb_column vc_column_container ">
           <div class="wpb_wrapper">
             <div>
-              <h4>Pracovní postup</h4>
+              <h4>Education</h4>
               <div class="line-con" style="border-bottom:1px; border-bottom-style:solid; border-color:#ebebeb;"></div>
             </div>
             <div class="clearfix col-md-12" style="height: 60px;"></div>
-            <div class="w-col w-col-3 wpb_column vc_column_container ">
-              <div class="wpb_wrapper">
-                <div class="div-spc" style="text-align:left">
-                  <div class="process-ico"><i class="fa fa-search" style="font-size:3em; "></i></div>
-                  <div class="step-sub-t">Krok 1</div>
-                  <h4 class="icobox-tittle">Analýza</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="w-col w-col-3 wpb_column vc_column_container ">
+            {% for school in site.data.about_me.education %}
+            <div class="w-col w-col-4 wpb_column vc_column_container ">
               <div class="wpb_wrapper">
-                <div class="div-spc" style="text-align:left">
-                  <div class="process-ico"><i class="fa fa-magic" style="font-size:3em; "></i></div>
-                  <div class="step-sub-t">Krok 2</div>
-                  <h4 class="icobox-tittle">Koncepce</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+                <div class="team-wrap align-center"><a class="w-inline-block" href="{{ school.link }}" target="_blank"><img src="{{ school.logo }}" alt="{{ school.school }}"></a>
+                  <div class="team-wrapper">
+                    <h4 class="icobox-tittle">{{ school.school }}</h4>
+                    <div class="step-sub-t">{{ school.field_of_study }} <span class="gray">| {{ school.year }}</span></div>
+                    <p><b>Thesis:</b> {{ school.thesis }}</p>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="w-col w-col-3 wpb_column vc_column_container ">
-              <div class="wpb_wrapper">
-                <div class="div-spc" style="text-align:left">
-                  <div class="process-ico"><i class="fa fa-paint-brush" style="font-size:3em; "></i></div>
-                  <div class="step-sub-t">Krok 3</div>
-                  <h4 class="icobox-tittle">Design</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-col w-col-3 wpb_column vc_column_container ">
-              <div class="wpb_wrapper">
-                <div class="div-spc" style="text-align:left">
-                  <div class="process-ico"><i class="fa fa-thumbs-o-up" style="font-size:3em; "></i></div>
-                  <div class="step-sub-t">Krok 4</div>
-                  <h4 class="icobox-tittle">Implementace</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
-                </div>
-              </div>
-            </div>
+            {% endfor %}
 
           </div>
         </div>
       </div>
     </div>
   </section>
-  <div class="clearfix"></div>
-  <sec
-  <section style="border-top-width: 1px !important;border-bottom-width: 1px !important;background-color: #f0f1f3 !important;border-top-color: rgba(204,204,204,0.49) !important;border-top-style: solid !important;border-bottom-color: rgba(204,204,204,0.49) !important;border-bottom-style: solid !important;"
-  class="section vc_custom_1429290111567">
+
+  <section class="section">
     <div class="container">
       <div class="row">
         <div class="w-col w-col-12 wpb_column vc_column_container ">
           <div class="wpb_wrapper">
-            <div class="w-slider carousel-ibox">
-              <div class="w-slider-mask">
-                <div class="w-slide" style="transform: translateX(0px); opacity: 1;">
-                  <div class="test-wrapper">
-                    <div class="tst-ico"><i class="fa fa-comment fa-3x"></i></div>
-                    <div class="gi-inner">
-                      <p class="tst-txt">Pellentesque commodo eros a enim. Fusce ac felis sit amet ligula pharetra condimentum. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Pellentesque dapibus hendrerit tortor. Fusce ac felis sit amet ligula pharetra
-                        condimentum.</p>
-                      <h4>Neo</h4> </div>
+            <div>
+              <h4>Work experience</h4>
+              <div class="line-con" style="border-bottom:1px; border-bottom-style:solid; border-color:#ebebeb;"></div>
+            </div>
+            <div class="clearfix col-md-12" style="height: 60px;"></div>
+
+            {% for employer in site.data.about_me.work_experience %}
+            <div class="w-col w-col-4 wpb_column vc_column_container ">
+              <div class="wpb_wrapper">
+                <div class="team-wrap align-center"><a class="w-inline-block" href="{{ employer.link }}" target="_blank"><img src="{{ employer.logo }}" alt="{{ employer.employer }}"></a>
+                  <div class="team-wrapper">
+                    <h4 class="icobox-tittle">{{ employer.employer }}</h4>
+                    <div class="step-sub-t">{{ employer.position }} <span class="gray">| {{ employer.year }}</span></div>
+                    <p>{{ employer.text }}</p>
                   </div>
                 </div>
-                <div class="w-slide" style="transform: translateX(0px); opacity: 1;">
-                  <div class="test-wrapper">
-                    <div class="tst-ico"><i class="fa fa-comment fa-3x"></i></div>
-                    <div class="gi-inner">
-                      <p class="tst-txt">Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Ut varius tincidunt libero. Vestibulum volutpat pretium
-                        libero.</p>
-                      <h4>Papa Song</h4> </div>
-                  </div>
-                </div>
-                <div class="w-slide" style="transform: translateX(0px); opacity: 1;">
-                  <div class="test-wrapper">
-                    <div class="tst-ico"><i class="fa fa-comment fa-3x"></i></div>
-                    <div class="gi-inner">
-                      <p class="tst-txt">Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Vestibulum facilisis, purus nec pulvinar iaculis, ligula mi congue nunc, vitae euismod ligula urna in dolor. Fusce
-                        risus nisl, viverra et, tempor et.</p>
-                      <h4>Jan Delmar</h4> </div>
-                  </div>
-                </div>
-                <div class="w-slide" style="transform: translateX(0px); opacity: 1;">
-                  <div class="test-wrapper">
-                    <div class="tst-ico"><i class="fa fa-comment fa-3x"></i></div>
-                    <div class="gi-inner">
-                      <p class="tst-txt">Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Fusce fermentum. Etiam sit amet orci eget eros faucibus tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Pellentesque ut neque.</p>
-                      <h4>Anonymous</h4> </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-slider-nav w-slider-nav-invert w-round crs-dot">
-                <div class="w-slider-dot w-active" data-wf-ignore=""></div>
-                <div class="w-slider-dot" data-wf-ignore=""></div>
-                <div class="w-slider-dot" data-wf-ignore=""></div>
-                <div class="w-slider-dot" data-wf-ignore=""></div>
               </div>
             </div>
+            {% endfor %}
+
           </div>
         </div>
       </div>
     </div>
   </section>
-  <div class="clearfix"></div>
+
+  <section style="border-top-width: 1px !important;border-bottom-width: 1px !important;background-color: #f0f1f3 !important;border-top-color: rgba(204,204,204,0.49) !important;border-top-style: solid !important;border-bottom-color: rgba(204,204,204,0.49) !important;border-bottom-style: solid !important;" class="section vc_custom_1429198421128">
+    <div class="container">
+      <div class="row">
+        <div class="w-col w-col-12 wpb_column vc_column_container ">
+          <div class="wpb_wrapper">
+            <div>
+              <h4>Interests</h4>
+              <div class="line-con" style="border-bottom:1px; border-bottom-style:solid; border-color:#ebebeb;"></div>
+            </div>
+            <div class="clearfix col-md-12" style="height: 60px;"></div>
+
+            {% for interest in site.data.about_me.interests %}
+            <div class="w-col w-col-4 wpb_column vc_column_container  vc_custom_1429198912519">
+              <div class="wpb_wrapper">
+                <div class="ibox-flo ibox-center"><a class="w-inline-block circle-iconbox square-ibox" href="#"><i class="fa fa-{{interest.icon}} fa-2x"></i></a></div>
+                <div class="lefttext-icobox centertext-iconbox">
+                  <h4 class="icobox-tittle">{{ interest.text }}</h4>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+
+            <div class="clearfix col-md-12" style="height: 60px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </div>
 
