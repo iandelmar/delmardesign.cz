@@ -1,0 +1,5 @@
+filter_star: true # 'true' if you want starred item filter, 'false' otherwise
+filters:
+    - { filter: design, text: Design }
+    - { filter: web, text: Web }
+    - { filter: programovani, text: Programování }
