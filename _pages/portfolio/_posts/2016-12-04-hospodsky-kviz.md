@@ -9,9 +9,10 @@ skills: Logo design, visual identity, branding
 # Choose min one: star | design, web, programming
 filters: star design
 
-featured_image: /assets/images/portfolio/hospodsky-kviz/1.png
+featured_image: /assets/images/portfolio/hospodsky-kviz/1.jpg
 images: # 1-5 images, text is optional
-  - { link: /assets/images/portfolio/hospodsky-kviz/1.png, caption: Logo design}
+  - { link: /assets/images/portfolio/hospodsky-kviz/1.jpg, caption: Logo design}
+  - { link: /assets/images/portfolio/hospodsky-kviz/2.png, caption: }
 
 # Optional
 client: Hospodský kvíz, s.r.o.
